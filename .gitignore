@@ -1,0 +1,4 @@
+*.gs
+.env
+credentials.json
+client_secret.json
