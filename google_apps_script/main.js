@@ -1,5 +1,5 @@
 const SENDER_EMAIL = "";
-const API_KEY = ""; 
+const API_KEY = "";
 const MODEL_NAME = "gemini-pro";
 
 const SYSTEM_INSTRUCTIONS = `
@@ -230,76 +230,68 @@ Please keep your response different from previous responses in history. Below is
   let content = {};
 
   while (retryCount < maxRetries) {
+        let response;
+        let responseText;
         try {
           response = UrlFetchApp.fetch(
             `https://generativelanguage.googleapis.com/v1beta/models/${MODEL_NAME}:generateContent`,
             options
           );
-        } catch (e) {
-            Logger.log(`Error fetching Gemini API: ${e}`);
-             retryCount++;
-           if (retryCount >= maxRetries) {
-             return handleGeminiError(`Error fetching Gemini API after ${maxRetries} retries.`,e);
-            }
-          Utilities.sleep(1000 * (2 ** retryCount));
-          continue;
-        }
+           responseText = response.getContentText();
 
-
-       const responseText = response.getContentText();
-
-        try {
           const responseJson = JSON.parse(responseText);
           if (responseJson.candidates && responseJson.candidates.length > 0) {
             let text = responseJson.candidates[0].content.parts[0].text;
             text = text.trim();
-                // Extract JSON part
+              // Extract JSON part
             const jsonMatch = text.match(/\{[\s\S]*\}/);
              if(jsonMatch){
                text = jsonMatch[0];
              }
-             try {
+
                 content = JSON.parse(text);
                    //check if the content is a valid object
                  if(typeof content !== 'object' || content === null) {
-                      return handleGeminiError(`Invalid JSON from Gemini: Content is not a valid JSON object`,text);
+                      throw new Error(`Invalid JSON from Gemini: Content is not a valid JSON object`);
                    }
                 //check for vocabulary
                 if (!Array.isArray(content.vocabulary) || content.vocabulary.length !== 5) {
-                  return handleGeminiError(`Invalid JSON from Gemini: Vocabulary is not an array of 5`,text);
+                  throw new Error(`Invalid JSON from Gemini: Vocabulary is not an array of 5`);
                  }
 
               for(let i = 0; i < content.vocabulary.length; i++) {
                  const vocab = content.vocabulary[i];
                   if (typeof vocab !== 'object' || !vocab || !vocab.text || typeof vocab.text !== 'string' || !vocab.level || typeof vocab.level !== 'string' || !vocab.mandarin || typeof vocab.mandarin !== 'string' ) {
-                   return handleGeminiError(`Invalid JSON from Gemini: Invalid vocabulary object at index ${i}`,text);
+                    throw new Error(`Invalid JSON from Gemini: Invalid vocabulary object at index ${i}`);
                    }
                 }
               // check for preposition
                  if (typeof content.preposition !== 'object' || !content.preposition || !content.preposition.text || typeof content.preposition.text !== 'string'|| !content.preposition.level|| typeof content.preposition.level !== 'string' || !content.preposition.mandarin|| typeof content.preposition.mandarin !== 'string') {
-                   return handleGeminiError(`Invalid JSON from Gemini: Invalid preposition object`,text);
+                  throw new Error(`Invalid JSON from Gemini: Invalid preposition object`);
                   }
                 // check for phrase
                   if (typeof content.phrase !== 'object' || !content.phrase || !content.phrase.text  || typeof content.phrase.text !== 'string' || !content.phrase.level || typeof content.phrase.level !== 'string'  || !content.phrase.mandarin || typeof content.phrase.mandarin !== 'string') {
-                       return handleGeminiError(`Invalid JSON from Gemini: Invalid phrase object`,text);
+                      throw new Error(`Invalid JSON from Gemini: Invalid phrase object`);
                     }
                // check for writingPattern
                   if (typeof content.writingPattern !== 'object' || !content.writingPattern || !content.writingPattern.text || typeof content.writingPattern.text !== 'string' || !content.writingPattern.level || typeof content.writingPattern.level !== 'string' || !content.writingPattern.mandarin || typeof content.writingPattern.mandarin !== 'string') {
-                        return handleGeminiError(`Invalid JSON from Gemini: Invalid writingPattern object`,text);
+                     throw new Error(`Invalid JSON from Gemini: Invalid writingPattern object`);
                    }
-               } catch (e) {
-                 return handleGeminiError(`Invalid JSON from Gemini: Error parsing content: ${e}`, text);
-               }
-            break;
+
+            return content;
           } else {
-              return handleGeminiError("Invalid response from Gemini");
+            throw new Error("Invalid response from Gemini");
             }
       } catch (e) {
-        return handleGeminiError(`Error parsing response from Gemini: ${e}`, responseText);
-     }
-      retryCount++;
-      Utilities.sleep(1000 * (2 ** retryCount));
-  }
+         Logger.log(`Error during content generation: ${e} - responseText: ${responseText}`);
+           if (retryCount >= maxRetries -1) { // retry until maxRetries -1
+                return handleGeminiError(`Error after ${maxRetries} retries: ${e}`, responseText);
+            }
+      } finally {
+        retryCount++;
+        Utilities.sleep(1000 * (2 ** retryCount));
+      }
+    }
 return content;
 }
 
