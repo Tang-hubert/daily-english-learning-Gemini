@@ -402,10 +402,8 @@ function sendDailyEmail() {
         <head>
         <style>
           .highlight {
-            background-color: #f0ad4e; /* A more visible highlight color */
-            padding: 2px 5px;
-            border-radius: 3px;
-            font-weight: bold;
+            background-color: #fff2a8; /* Highlight color for <mark> tag */
+            padding: 2px;
             }
           .category-title {
             font-size: 1.2em;
@@ -421,8 +419,10 @@ function sendDailyEmail() {
             margin-left: 10px;
             }
           mark {
-            background-color: #fff2a8; /* Highlight color for <mark> tag */
-            padding: 2px;
+            background-color: #f0ad4e; /* A more visible highlight color */
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-weight: bold;
             }
         </style>
         </head>
