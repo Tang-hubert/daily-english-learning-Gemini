@@ -76,65 +76,65 @@ this is the basic structural JSON format string I want:
   }
 }
 \`\`\`
-
 `;
 
 const EXAMPLE_OUTPUT = `
-        \`\`\`
-        {
-           "vocabulary": [
-             {
-              "text": "The word <mark>serendipity</mark> perfectly describes finding a twenty dollar bill in your old jeans.",
-              "level": "C1",
-              "mandarin": "<mark>意外發現</mark>這個詞完美地描述了在你的舊牛仔褲裡找到一張二十美元鈔票。",
-              "example": "Finding that twenty dollar bill was a moment of pure <mark>serendipity</mark>."
-              },
-             {
-              "text": "<mark>Ubiquitous</mark> is a fancy word for 'it's everywhere,' like those darn squirrels.",
-              "level": "C1",
-              "mandarin": "<mark>無處不在</mark>是一個花哨的詞，表示「它無處不在」，就像那些該死的松鼠一樣。",
-              "example": "The <mark>ubiquitous</mark> coffee shops made it easy to find a caffeine fix."
-             },
-             {
-              "text": "His <mark>myriad</mark> excuses for being late were truly something to behold.",
-              "level": "C1",
-              "mandarin": "他遲到的<mark>無數</mark>藉口真是令人嘆為觀止。",
-              "example": "The city lights created a <mark>myriad</mark> of shimmering reflections."
-             },
-            {
-              "text": "The <mark>ephemeral</mark> nature of a summer vacation always makes you want more.",
-              "level": "C2",
-              "mandarin": "暑假的<mark>短暫</mark>性質總是讓你想要更多。",
-              "example": "The joy of a perfect summer day is often <mark>ephemeral</mark>."
-            },
-            {
-              "text": "Her <mark>eloquent</mark> speech moved the audience, but I was more impressed with the free snacks.",
-              "level": "C1",
-              "mandarin": "她<mark>雄辯</mark>的演講感動了觀眾，但我更欣賞免費的點心。",
-              "example": "She delivered an <mark>eloquent</mark> argument that swayed the jury."
-            }
-           ],
-           "preposition": {
-              "text": "He was <mark>on</mark> the verge of giving up his dream, but decided to keep going.",
-              "level": "C1",
-              "mandarin": "他<mark>差點</mark>放棄他的夢想，但決定繼續前進。",
-              "example": "She's always <mark>on</mark> time for her appointments, it's one of her traits."
-             },
-           "phrase": {
-              "text": "The boss decided to <mark>call it a day</mark> after everyone is tired from the long meeting.",
-              "level": "C2",
-              "mandarin": "老闆在漫長的會議讓大家都很累後決定<mark>結束今天的工作</mark>。",
-              "example": "After a long hike, we decided to <mark>call it a day</mark> and head back to the campsite."
-              },
-            "writingPattern": {
-              "text": "While some may think it's a simple task, <mark>in reality</mark> it requires a lot of effort.",
-              "level": "C1",
-              "mandarin": "雖然有些人可能認為這是一個簡單的任務，但<mark>實際上</mark>它需要大量的努力。",
-              "example":"<mark>In reality</mark>, the situation is much more complex than it appears at first."
-              }
-         }
-        \`\`\`
-        `;
+\`\`\`
+{
+    "vocabulary": [
+      {
+      "text": "The word <mark>serendipity</mark> perfectly describes finding a twenty dollar bill in your old jeans.",
+      "level": "C1",
+      "mandarin": "<mark>意外發現</mark>這個詞完美地描述了在你的舊牛仔褲裡找到一張二十美元鈔票。",
+      "example": "Finding that twenty dollar bill was a moment of pure <mark>serendipity</mark>."
+      },
+      {
+      "text": "<mark>Ubiquitous</mark> is a fancy word for 'it's everywhere,' like those darn squirrels.",
+      "level": "C1",
+      "mandarin": "<mark>無處不在</mark>是一個花哨的詞，表示「它無處不在」，就像那些該死的松鼠一樣。",
+      "example": "The <mark>ubiquitous</mark> coffee shops made it easy to find a caffeine fix."
+      },
+      {
+      "text": "His <mark>myriad</mark> excuses for being late were truly something to behold.",
+      "level": "C1",
+      "mandarin": "他遲到的<mark>無數</mark>藉口真是令人嘆為觀止。",
+      "example": "The city lights created a <mark>myriad</mark> of shimmering reflections."
+      },
+    {
+      "text": "The <mark>ephemeral</mark> nature of a summer vacation always makes you want more.",
+      "level": "C2",
+      "mandarin": "暑假的<mark>短暫</mark>性質總是讓你想要更多。",
+      "example": "The joy of a perfect summer day is often <mark>ephemeral</mark>."
+    },
+    {
+      "text": "Her <mark>eloquent</mark> speech moved the audience, but I was more impressed with the free snacks.",
+      "level": "C1",
+      "mandarin": "她<mark>雄辯</mark>的演講感動了觀眾，但我更欣賞免費的點心。",
+      "example": "She delivered an <mark>eloquent</mark> argument that swayed the jury."
+    }
+    ],
+    "preposition": {
+      "text": "He was <mark>on</mark> the verge of giving up his dream, but decided to keep going.",
+      "level": "C1",
+      "mandarin": "他<mark>差點</mark>放棄他的夢想，但決定繼續前進。",
+      "example": "She's always <mark>on</mark> time for her appointments, it's one of her traits."
+      },
+    "phrase": {
+      "text": "The boss decided to <mark>call it a day</mark> after everyone is tired from the long meeting.",
+      "level": "C2",
+      "mandarin": "老闆在漫長的會議讓大家都很累後決定<mark>結束今天的工作</mark>。",
+      "example": "After a long hike, we decided to <mark>call it a day</mark> and head back to the campsite."
+      },
+    "writingPattern": {
+      "text": "While some may think it's a simple task, <mark>in reality</mark> it requires a lot of effort.",
+      "level": "C1",
+      "mandarin": "雖然有些人可能認為這是一個簡單的任務，但<mark>實際上</mark>它需要大量的努力。",
+      "example":"<mark>In reality</mark>, the situation is much more complex than it appears at first."
+      }
+  }
+\`\`\`
+`;
+
 
 /**
  * Handles and logs errors from the Gemini API.
@@ -152,8 +152,9 @@ function handleGeminiError(errorMessage, responseText) {
         preposition: { text: errorMessage, level: "Error", mandarin: errorMessage },
         phrase: { text: errorMessage, level: "Error", mandarin: errorMessage },
         writingPattern: { text: errorMessage, level: "Error", mandarin: errorMessage },
-      };
+    };
 }
+
 
 /**
  * Generates content using the Gemini API with retry logic and error handling.
@@ -163,7 +164,7 @@ function handleGeminiError(errorMessage, responseText) {
  */
 function generateContentWithGemini(chatId, isNewChat) {
   if (!API_KEY) {
-      return handleGeminiError("API key is missing. Please set the API_KEY constant.");
+    return handleGeminiError("API key is missing. Please set the API_KEY constant.");
   }
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   const sheet = ss.getSheetByName("sheet1");
@@ -204,7 +205,7 @@ Please keep your response different from previous responses in history. Below is
             \`\`\`
         Example output should be:
             ${EXAMPLE_OUTPUT}
-        `;
+  `;
 
     const data = {
         contents: [{
@@ -214,6 +215,7 @@ Please keep your response different from previous responses in history. Below is
             }]
         }]
     };
+
     const options = {
         method: "post",
         headers: {
@@ -237,61 +239,61 @@ Please keep your response different from previous responses in history. Below is
             `https://generativelanguage.googleapis.com/v1beta/models/${MODEL_NAME}:generateContent`,
             options
           );
-           responseText = response.getContentText();
+          responseText = response.getContentText();
 
           const responseJson = JSON.parse(responseText);
           if (responseJson.candidates && responseJson.candidates.length > 0) {
             let text = responseJson.candidates[0].content.parts[0].text;
             text = text.trim();
-              // Extract JSON part
+            // Extract JSON part
             const jsonMatch = text.match(/\{[\s\S]*\}/);
-             if(jsonMatch){
-               text = jsonMatch[0];
-             }
+            if(jsonMatch){
+              text = jsonMatch[0];
+            }
 
-                content = JSON.parse(text);
-                   //check if the content is a valid object
-                 if(typeof content !== 'object' || content === null) {
-                      throw new Error(`Invalid JSON from Gemini: Content is not a valid JSON object`);
-                   }
-                //check for vocabulary
-                if (!Array.isArray(content.vocabulary) || content.vocabulary.length !== 5) {
-                  throw new Error(`Invalid JSON from Gemini: Vocabulary is not an array of 5`);
-                 }
+            content = JSON.parse(text);
+            //check if the content is a valid object
+            if(typeof content !== 'object' || content === null) {
+              throw new Error(`Invalid JSON from Gemini: Content is not a valid JSON object`);
+            }
+            //check for vocabulary
+            if (!Array.isArray(content.vocabulary) || content.vocabulary.length !== 5) {
+              throw new Error(`Invalid JSON from Gemini: Vocabulary is not an array of 5`);
+            }
 
-              for(let i = 0; i < content.vocabulary.length; i++) {
-                 const vocab = content.vocabulary[i];
-                  if (typeof vocab !== 'object' || !vocab || !vocab.text || typeof vocab.text !== 'string' || !vocab.level || typeof vocab.level !== 'string' || !vocab.mandarin || typeof vocab.mandarin !== 'string' ) {
-                    throw new Error(`Invalid JSON from Gemini: Invalid vocabulary object at index ${i}`);
-                   }
-                }
-              // check for preposition
-                 if (typeof content.preposition !== 'object' || !content.preposition || !content.preposition.text || typeof content.preposition.text !== 'string'|| !content.preposition.level|| typeof content.preposition.level !== 'string' || !content.preposition.mandarin|| typeof content.preposition.mandarin !== 'string') {
-                  throw new Error(`Invalid JSON from Gemini: Invalid preposition object`);
-                  }
-                // check for phrase
-                  if (typeof content.phrase !== 'object' || !content.phrase || !content.phrase.text  || typeof content.phrase.text !== 'string' || !content.phrase.level || typeof content.phrase.level !== 'string'  || !content.phrase.mandarin || typeof content.phrase.mandarin !== 'string') {
-                      throw new Error(`Invalid JSON from Gemini: Invalid phrase object`);
-                    }
-               // check for writingPattern
-                  if (typeof content.writingPattern !== 'object' || !content.writingPattern || !content.writingPattern.text || typeof content.writingPattern.text !== 'string' || !content.writingPattern.level || typeof content.writingPattern.level !== 'string' || !content.writingPattern.mandarin || typeof content.writingPattern.mandarin !== 'string') {
-                     throw new Error(`Invalid JSON from Gemini: Invalid writingPattern object`);
-                   }
+            for(let i = 0; i < content.vocabulary.length; i++) {
+              const vocab = content.vocabulary[i];
+              if (typeof vocab !== 'object' || !vocab || !vocab.text || typeof vocab.text !== 'string' || !vocab.level || typeof vocab.level !== 'string' || !vocab.mandarin || typeof vocab.mandarin !== 'string' ) {
+                throw new Error(`Invalid JSON from Gemini: Invalid vocabulary object at index ${i}`);
+              }
+            }
+            // check for preposition
+            if (typeof content.preposition !== 'object' || !content.preposition || !content.preposition.text || typeof content.preposition.text !== 'string'|| !content.preposition.level|| typeof content.preposition.level !== 'string' || !content.preposition.mandarin|| typeof content.preposition.mandarin !== 'string') {
+              throw new Error(`Invalid JSON from Gemini: Invalid preposition object`);
+            }
+            // check for phrase
+            if (typeof content.phrase !== 'object' || !content.phrase || !content.phrase.text  || typeof content.phrase.text !== 'string' || !content.phrase.level || typeof content.phrase.level !== 'string'  || !content.phrase.mandarin || typeof content.phrase.mandarin !== 'string') {
+              throw new Error(`Invalid JSON from Gemini: Invalid phrase object`);
+            }
+            // check for writingPattern
+            if (typeof content.writingPattern !== 'object' || !content.writingPattern || !content.writingPattern.text || typeof content.writingPattern.text !== 'string' || !content.writingPattern.level || typeof content.writingPattern.level !== 'string' || !content.writingPattern.mandarin || typeof content.writingPattern.mandarin !== 'string') {
+              throw new Error(`Invalid JSON from Gemini: Invalid writingPattern object`);
+            }
 
             return content;
           } else {
             throw new Error("Invalid response from Gemini");
             }
-      } catch (e) {
-         Logger.log(`Error during content generation: ${e} - responseText: ${responseText}`);
-           if (retryCount >= maxRetries -1) { // retry until maxRetries -1
+        } catch (e) {
+            Logger.log(`Error during content generation: ${e} - responseText: ${responseText}`);
+              if (retryCount >= maxRetries -1) { // retry until maxRetries -1
                 return handleGeminiError(`Error after ${maxRetries} retries: ${e}`, responseText);
+              }
+          } finally {
+              retryCount++;
+              Utilities.sleep(1000 * (2 ** retryCount));
             }
-      } finally {
-        retryCount++;
-        Utilities.sleep(1000 * (2 ** retryCount));
-      }
-    }
+}
 return content;
 }
 
@@ -363,33 +365,33 @@ function sendDailyEmail() {
         try {
           const vocabularyArray = JSON.parse(data[1]);
             if(Array.isArray(vocabularyArray)) {
-               vocabularyArray.forEach(vocab => {
-                 vocabularyContent += `
-                    <p class="category-title">
-                    <span class="highlight">Vocabulary</span> (Level: <strong>${vocab.level}</strong>)
-                    </p>
-                    <p class="example-text">${vocab.text}</p>
-                    <p class="mandarin-text">${vocab.mandarin}</p>
-                    <p class="example-text">Illustrative sentence: ${vocab.example}</p>
-                 `;
+              vocabularyArray.forEach(vocab => {
+                vocabularyContent += `
+                  <p class="category-title">
+                  <span class="highlight">Vocabulary</span> (Level: <strong>${vocab.level}</strong>)
+                  </p>
+                  <p class="example-text">${vocab.text}</p>
+                  <p class="mandarin-text">${vocab.mandarin}</p>
+                  <p class="example-text">Illustrative sentence: ${vocab.example}</p>
+                `;
               });
             } else {
-               vocabularyContent =  `
-                    <p class="category-title">
-                    <span class="highlight">Vocabulary</span> (Level: <strong>Error</strong>)
-                    </p>
-                    <p class="example-text">Invalid Vocabulary Data</p>
-                    <p class="mandarin-text">Invalid Vocabulary Data</p>
-                 `;
+              vocabularyContent =  `
+                <p class="category-title">
+                <span class="highlight">Vocabulary</span> (Level: <strong>Error</strong>)
+                </p>
+                <p class="example-text">Invalid Vocabulary Data</p>
+                <p class="mandarin-text">Invalid Vocabulary Data</p>
+              `;
              }
         } catch (e) {
-             vocabularyContent =  `
-                    <p class="category-title">
-                    <span class="highlight">Vocabulary</span> (Level: <strong>Error</strong>)
-                    </p>
-                    <p class="example-text">Invalid Vocabulary Data</p>
-                    <p class="mandarin-text">Invalid Vocabulary Data</p>
-                 `;
+            vocabularyContent =  `
+              <p class="category-title">
+              <span class="highlight">Vocabulary</span> (Level: <strong>Error</strong>)
+              </p>
+              <p class="example-text">Invalid Vocabulary Data</p>
+              <p class="mandarin-text">Invalid Vocabulary Data</p>
+              `;
             Logger.log(`Error parsing vocabulary data ${e} - data: ${data[1]}`);
             return;
         }
@@ -404,24 +406,24 @@ function sendDailyEmail() {
             padding: 2px 5px;
             border-radius: 3px;
             font-weight: bold;
-             }
+            }
           .category-title {
             font-size: 1.2em;
             font-weight: bold;
-             }
+            }
           .example-text {
             font-size: 1.1em;
             margin-left: 10px;
-             }
+            }
           .mandarin-text {
             font-size: 1em;
             color: #777;
             margin-left: 10px;
-           }
-           mark {
+            }
+          mark {
             background-color: #fff2a8; /* Highlight color for <mark> tag */
             padding: 2px;
-             }
+            }
         </style>
         </head>
         <body>
@@ -433,18 +435,18 @@ function sendDailyEmail() {
             <span class="highlight">Preposition</span> (Level: <strong>${extractLevelFromJSON(data[2])}</strong>)
           </p>
           <p class="example-text">${extractTextFromJSON(data[2])}</p>
-           <p class="mandarin-text">${extractMandarinFromJSON(data[2])}</p>
-           <p class="example-text">Illustrative sentence: ${extractExampleFromJSON(data[2])}</p>
+          <p class="mandarin-text">${extractMandarinFromJSON(data[2])}</p>
+          <p class="example-text">Illustrative sentence: ${extractExampleFromJSON(data[2])}</p>
           <p class="category-title">
-             <span class="highlight">Phrase</span> (Level: <strong>${extractLevelFromJSON(data[3])}</strong>)
+            <span class="highlight">Phrase</span> (Level: <strong>${extractLevelFromJSON(data[3])}</strong>)
           </p>
           <p class="example-text">${extractTextFromJSON(data[3])}</p>
           <p class="mandarin-text">${extractMandarinFromJSON(data[3])}</p>
           <p class="example-text">Illustrative sentence: ${extractExampleFromJSON(data[3])}</p>
-           <p class="category-title">
+          <p class="category-title">
             <span class="highlight">Sentence structure</span> (Level: <strong>${extractLevelFromJSON(data[4])}</strong>)
-           </p>
-           <p class="example-text">${extractTextFromJSON(data[4])}</p>
+          </p>
+          <p class="example-text">${extractTextFromJSON(data[4])}</p>
           <p class="mandarin-text">${extractMandarinFromJSON(data[4])}</p>
           <p class="example-text">Illustrative sentence: ${extractExampleFromJSON(data[4])}</p>
         </body>
@@ -483,7 +485,7 @@ function extractExampleFromJSON(jsonString) {
  */
 function extractLevelFromJSON(jsonString) {
   try {
-     const parsed = JSON.parse(jsonString);
+    const parsed = JSON.parse(jsonString);
     return parsed.level || "Error";
   } catch (e) {
     Logger.log(`Error extracting level from JSON: ${e} - jsonString: ${jsonString}`);
@@ -498,11 +500,11 @@ function extractLevelFromJSON(jsonString) {
  */
 function extractTextFromJSON(jsonString) {
   try {
-      const parsed = JSON.parse(jsonString);
-      return parsed.text || "Error";
+    const parsed = JSON.parse(jsonString);
+    return parsed.text || "Error";
   } catch (e) {
-      Logger.log(`Error extracting text from JSON: ${e} - jsonString: ${jsonString}`);
-      return "Error";
+    Logger.log(`Error extracting text from JSON: ${e} - jsonString: ${jsonString}`);
+    return "Error";
   }
 }
 
@@ -529,34 +531,34 @@ function extractMandarinFromJSON(jsonString) {
  */
 function getChatHistory(chatId) {
     try {
-        const ss = SpreadsheetApp.getActiveSpreadsheet();
-        const sheet = ss.getSheetByName("sheet1");
-        // Get headers
-        const headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
+      const ss = SpreadsheetApp.getActiveSpreadsheet();
+      const sheet = ss.getSheetByName("sheet1");
+      // Get headers
+      const headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
 
-        // Get all data
-        const data = sheet.getDataRange().getValues();
+      // Get all data
+      const data = sheet.getDataRange().getValues();
 
-        // Find the column indexes based on headers
-        const dateIndex = headers.indexOf("Date");
-        const vocabularyIndex = headers.indexOf("vocabulary");
-        const prepositionIndex = headers.indexOf("preposition");
-        const phraseIndex = headers.indexOf("phrase");
-        const writingPatternIndex = headers.indexOf("writingPattern");
-        const chatIdIndex = headers.indexOf("chatId");
+      // Find the column indexes based on headers
+      const dateIndex = headers.indexOf("Date");
+      const vocabularyIndex = headers.indexOf("vocabulary");
+      const prepositionIndex = headers.indexOf("preposition");
+      const phraseIndex = headers.indexOf("phrase");
+      const writingPatternIndex = headers.indexOf("writingPattern");
+      const chatIdIndex = headers.indexOf("chatId");
 
-        // Filter and map the chat history
-        const history = data.filter(row => row[chatIdIndex] === chatId)
-            .map(row => {
-                return {
-                    vocabulary: row[vocabularyIndex] || "",
-                    preposition: row[prepositionIndex] || "",
-                    phrase: row[phraseIndex] || "",
-                    writingPattern: row[writingPatternIndex] || ""
-                };
-            });
-        if (!history) return "";
-        return JSON.stringify(history);
+      // Filter and map the chat history
+      const history = data.filter(row => row[chatIdIndex] === chatId)
+          .map(row => {
+              return {
+                  vocabulary: row[vocabularyIndex] || "",
+                  preposition: row[prepositionIndex] || "",
+                  phrase: row[phraseIndex] || "",
+                  writingPattern: row[writingPatternIndex] || ""
+              };
+          });
+      if (!history) return "";
+      return JSON.stringify(history);
     } catch (e) {
         Logger.log(`getChatHistory 錯誤 ${e}`);
         return "";
