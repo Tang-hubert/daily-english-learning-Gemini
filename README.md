@@ -2,6 +2,8 @@
 
 This project provides daily English learning content, generated using the Gemini API and delivered via email.
 
+[中文說明](https://github.com/Tang-hubert/daily-english-learning-Gemini/blob/main/README_CN.md)
+
 ## Overview
 
 The project uses the following technologies:
