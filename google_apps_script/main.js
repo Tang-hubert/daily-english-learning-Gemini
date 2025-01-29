@@ -1,5 +1,5 @@
-const SENDER_EMAIL = "";
-const API_KEY = "";
+const SENDER_EMAIL = "Enter sender email";
+const API_KEY = "Enter Gemini API key";
 const MODEL_NAME = "gemini-pro";
 
 const SYSTEM_INSTRUCTIONS = `
