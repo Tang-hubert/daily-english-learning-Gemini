@@ -1,6 +1,6 @@
 const SENDER_EMAIL = "Enter sender email";
 const API_KEY = "Enter Gemini API key";
-const MODEL_NAME = "gemini-pro";
+const MODEL_NAME = "gemini-1.5-flash";
 
 const SYSTEM_INSTRUCTIONS = `
 You are an English learning content generator specializing in advanced English. Your task is to produce a JSON object containing a diverse range of language examples, structured into the following categories: vocabulary, preposition, phrase, and writing pattern. The overall tone of the response should be humorous.
