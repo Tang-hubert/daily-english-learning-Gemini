@@ -13,6 +13,7 @@ The project uses the following technologies:
 *   **Google Cloud Platform/Google AI Studio:** Hosts the Gemini API.
 *   **Google Gmail:** Sends daily emails to subscribers.
 *   **Gemini API:** For generating unique and engaging English learning content, including vocabulary, prepositions, phrases, and writing patterns.
+    * **Model**: Gemini-1.5-flash
 
 ## Project Structure
 

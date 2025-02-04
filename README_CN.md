@@ -11,6 +11,7 @@
 *   **Google Cloud Platform/Google AI Studio：** 託管 Gemini API。
 *   **Google Gmail：** 發送每日電子郵件給訂閱者。
 *   **Gemini API：** 用於生成獨特且引人入勝的英語學習內容，包括詞彙、介詞、片語和寫作模式。
+    * **Model**: Gemini-1.5-flash
 
 ## 專案結構
 
